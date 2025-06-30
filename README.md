@@ -6,6 +6,7 @@ This project demonstrates how to take input from users through a styled form and
 
 
 🔑 Features:
+
 📥 Form Submission: Accepts input from an EJS-based frontend, styled with CSS.
 
 💾 Create: Stores the form data into MongoDB via Mongoose.
