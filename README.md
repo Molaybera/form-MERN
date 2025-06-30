@@ -7,15 +7,22 @@ This project demonstrates how to take input from users through a styled form and
 
 🔑 Features:
 📥 Form Submission: Accepts input from an EJS-based frontend, styled with CSS.
+
 💾 Create: Stores the form data into MongoDB via Mongoose.
+
 🔍 Read: Retrieves and displays the data using dynamic EJS templates.
+
 ✏️ Update: Handles an edit route that pre-fills form data and updates it on submit.
+
 🗑️ Delete: Supports deleting specific data entries through a delete route.
+
 
 
 
 🧾 Additional Info:
 📒 Step-by-step notes for setup and logic flow are available in the notes file inside the repo. Useful for understanding the backend flow or replicating the setup.
+
+
 
 📁 Tech Stack
 Backend: Node.js, Express
