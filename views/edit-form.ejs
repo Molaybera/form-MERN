@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Data</title>
+    <link rel="stylesheet" href="/form.css">
+</head>
+<body>
+    <h1>Edit Data</h1>
+
+
+    <form action="/edit/<%= item._id %>" method="POST">
+        <div>
+            <label>Name:</label>
+            <input type="text" name="name" required value="<%= item.name %>">
+        </div>
+        <div>
+            <label>Email:</label>
+            <input type="email" name="email" required value="<%= item.email %>">
+        </div>
+        <div>
+            <label>Message:</label>
+            <textarea name="message" required maxlength="500"><%= item.message %></textarea>
+        </div>
+        <div class="btn-container"> 
+            <button type="submit">Update</button>
+            <a href="/data/<%= item._id %>" class="Cancel-btn">Cancel</a>
+        </div>
+    </form>
+</body>
+</html>

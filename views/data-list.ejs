@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>All Data Entries</title>
+    <link rel="stylesheet" href="/data-list.css">
+</head>
+<body>
+    <h1>All Submitted Data</h1>
+    <!-- <% %> for JavaScript logic
+    <%= %> to output values
+    .forEach to loop through data -->
+    <ul>
+        <% data.forEach(item => { %>
+            <li>
+                <a href="/data/<%= item._id %>">
+                    <%= item.name %> - <%= item.email %>
+                </a>
+                (Submitted: <%= item.createdAt.toLocaleString() %>)
+                
+                <!-- this is the buttons for edit and delete -->
+                <div>
+                    <a href="/edit/<%= item._id %>">Edit</a>
+                    <form action="/delete/<%= item._id %>" method="POST" style="display: inline;">
+                        <button type="submit">Delete</button>
+                    </form>
+                </div>
+            
+            </li>
+        <% }); %>
+    </ul>
+    <a href="/add">Add New Data</a>
+</body>
+</html>

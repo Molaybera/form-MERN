@@ -1,0 +1,33 @@
+<!-- instructions -->
+-first we run the command "npm init -y".
+-also add nodemon so when ever you edit you code and save serve will auto load.
+-then install the pacakage {
+    express: Web framework for Node.js
+    mongoose: MongoDB object modeling tool
+    ejs: Template engine for rendering HTML
+    body-parser: Middleware to parse form data
+} we maybe add more pacakge in futher.
+-then created all the nessary files and folders {
+  ├── server.js       (main application file)
+  ├── views/          (for HTML templates)
+  ├── models/         (for database models)
+  ├── routes/         (for route definitions)
+  └── public/         (for static files like CSS)
+}.
+-then we have to require the pacakage. in the serve file to use those pacakages.
+-then listen the application.
+-(optionls you can add "dev": "nodemon server.js" in pacakage.json file to script so when you run the "npm run dev" it will start the app).
+-now we will connect the mongoodb to our app.
+-next we will create a data model for our database this will define what kind of data we want to store in our db.
+-now we will create routes to handle form submission and data diaplay(get,post) request.
+-create a DataRoutes file and set the routes. 
+-after that add the file to server.js so we can use it.
+-now create files in views folder.
+-now we have modify the usermodel for more validation to check email errors.
+-after this, update the catch block in post-router -> datarouter.js.
+-adding the edit fucntion in datarouter.js.
+-then add a edit-form.ejs file in view folder.
+-now we create delete funciton in datarouter.
+-as we created edit and delete fucniton now we can add a button to the ejs file so we can use the function.
+-lastly we can style all the ejs files.
+-no we are ready to deploy.

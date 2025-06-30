@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Details</title>
+    <link rel="stylesheet" href="/data-single.css">
+</head>
+<body>
+    <!-- <% %> for JavaScript logic
+    <%= %> to output values
+    .forEach to loop through data -->
+    <h1>Data Details</h1>
+    <h2><%= item.name %></h2>
+    <p><strong>Email:</strong> <%= item.email %></p>
+    <p><strong>Message:</strong> <%= item.message %></p>
+    <p><small>Submitted: <%= item.createdAt.toLocaleString() %></small></p>
+    <a href="/data">Back to All Data</a>
+</body>
+</html>
